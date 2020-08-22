@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+app-bar {
+    display: block;
+    width: 100%;
+    background-color: red;
+    padding: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+nav a {
+    color: white !important;
+}
+main {
+    padding: 20px;
+    overflow: auto;
+    margin: 10px;
+
+}
+news-list {
+    float: left;
+    width: 70%;
+    padding-left: 60px;
+}
+
+@media screen and (max-width: 513px) {
+    news-list {
+        width: 100%;
+        padding-left: 5px;
+    }
+    aside {
+        width: 100%;
+        padding-left: 5px;
+    }
+ }
+aside {
+    float: right;
+    width: 30%;
+    padding-left: 20px;
+}
+.news-container{
+    max-width: 768px;
+    margin: 0 auto;
+    
+    
+}
+.card{
+    text-decoration:'none';
+    color: inherit;
+    transition: .5s all;
+}
+
+.card:hover{
+    text-decoration:'none';
+    box-shadow:0 1rem 3rem rgba(0,0,0,.205)!important;
+    color: blue;
+    transition: .5s all;
+    transform: scale(1.05);
+}
+
+.card:hover .card-text{
+    color: black;
+} 
+.card-text{
+    font-size: 14px;
+}
+
+
+.center{
+    text-align: center;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: red;
+    text-align: center;
+    font-weight: bold;
+    bottom: 0px;
+    width: 100%;
+}
